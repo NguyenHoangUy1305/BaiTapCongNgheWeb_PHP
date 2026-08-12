@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ABC Shop - Cửa hàng văn phòng phẩm</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .bg-cyan { background-color: #00c3d9 !important; }
+        .text-cyan { color: #00c3d9 !important; }
+        .btn-outline-cyan { border-color: #00c3d9; color: #00c3d9; }
+        .btn-outline-cyan:hover { background-color: #00c3d9; color: white; }
+    </style>
+</head>
+<body>
+    <!-- Thanh điều hướng (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cyan py-3">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="#!"><i class="bi bi-shop"></i> ABC Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Trang chính</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Giới thiệu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Danh mục sản phẩm</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">Bút các loại</a></li>
+                            <li><a class="dropdown-item" href="#!">Sổ tay - Giấy</a></li>
+                            <li><a class="dropdown-item" href="#!">Dụng cụ khác</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light rounded-1 me-2" type="button">
+                        <i class="bi-person-fill me-1"></i> Đăng nhập
+                    </button>
+                    <button class="btn btn-outline-light rounded-1" type="button">
+                        <i class="bi-cart-fill me-1"></i> Giỏ hàng
+                        <span class="badge bg-danger text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Khu vực Sản phẩm -->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-2">
+            <h4 class="text-cyan mb-4 fw-bold">Tất cả sản phẩm</h4>
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+                
+                <!-- Sản phẩm 1 (Compa) -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-light shadow-sm">
+                        <div class="badge bg-danger text-white position-absolute rounded-pill px-3" style="top: 0.5rem; right: 0.5rem">Giảm giá</div>
+                        <img class="card-img-top p-3" src="../images/products/h1.jpg" alt="Compa" />
+                        <div class="card-body p-4 text-center">
+                            <h6 class="fw-bold text-cyan">Tên sản phẩm</h6>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star"></div>
+                            </div>
+                            <span class="text-muted text-decoration-line-through me-2">50.000đ</span>
+                            <span class="text-danger fw-bold">45.000đ</span>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                            <a class="btn btn-outline-cyan rounded-1 px-4" href="#">Chọn mua</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 2 (Khay nhựa) -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-light shadow-sm">
+                        <img class="card-img-top p-3" src="../images/products/v1.jpg" alt="Khay nhựa" />
+                        <div class="card-body p-4 text-center">
+                            <h6 class="fw-bold text-cyan">Tên sản phẩm</h6>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div>
+                            </div>
+                            <span class="text-dark fw-bold">180.000đ</span>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                            <a class="btn btn-outline-cyan rounded-1 px-4" href="#">Chọn mua</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 3 (Máy tính) -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-light shadow-sm">
+                        <div class="badge bg-danger text-white position-absolute rounded-pill px-3" style="top: 0.5rem; right: 0.5rem">Giảm giá</div>
+                        <img class="card-img-top p-3" src="../images/products/m1.jpg" alt="Máy tính" />
+                        <div class="card-body p-4 text-center">
+                            <h6 class="fw-bold text-cyan">Tên sản phẩm</h6>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div>
+                            </div>
+                            <span class="text-muted text-decoration-line-through me-2">300.000đ</span>
+                            <span class="text-danger fw-bold">270.000đ</span>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                            <a class="btn btn-outline-cyan rounded-1 px-4" href="#">Chọn mua</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 4 (Giấy A4) -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-light shadow-sm">
+                        <div class="badge bg-danger text-white position-absolute rounded-pill px-3" style="top: 0.5rem; right: 0.5rem">Giảm giá</div>
+                        <img class="card-img-top p-3" src="../images/products/g1.jpg" alt="Giấy A4" />
+                        <div class="card-body p-4 text-center">
+                            <h6 class="fw-bold text-cyan">Tên sản phẩm</h6>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star-fill"></div><div class="bi-star"></div>
+                            </div>
+                            <span class="text-muted text-decoration-line-through me-2">80.000đ</span>
+                            <span class="text-danger fw-bold">72.000đ</span>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
+                            <a class="btn btn-outline-cyan rounded-1 px-4" href="#">Chọn mua</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Phân trang -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link text-cyan" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link text-cyan" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-cyan" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-cyan" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link text-cyan" href="#">&raquo;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Banner (Ảnh Carousel h3) -->
+    <div class="container-fluid p-0 position-relative">
+        <img src="../images/carousel/h3.jpg" class="img-fluid w-100" style="object-fit: cover; height: 350px;" alt="Banner văn phòng phẩm">
+    </div>
+
+    <!-- Chân trang (Footer) -->
+    <footer class="bg-cyan text-white pt-4 pb-2">
+        <div class="container text-center mb-3">
+            <a href="#" class="text-white"><i class="bi bi-chevron-up fs-2"></i></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <h5 class="fw-bold">ABC Shop - Cửa hàng văn phòng phẩm</h5>
+                    <p class="small mb-1">Địa chỉ: 18 Ung Văn Khiêm, phường Đông Xuyên, TP Long Xuyên, An Giang</p>
+                    <p class="small mb-0">Điện thoại: 076 3841190 - Email: abc@abc.com</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold text-uppercase">Danh mục hàng</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Liên kết</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên kết</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên kết</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold text-uppercase">Dịch vụ khách hàng</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên hệ với chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="m-0 mt-3 text-center text-warning fw-bold small">Copyright © ABC Shop 2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
